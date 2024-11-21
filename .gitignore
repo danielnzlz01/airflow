@@ -121,7 +121,10 @@ config/*
 logs/*
 plugins/*
 
-# Do not ignore the folders themselves
+# Do not ignore the folders themselves and .gitkeep files
 !config/
 !logs/
 !plugins/
+!config/.gitkeep
+!logs/.gitkeep
+!plugins/.gitkeep
