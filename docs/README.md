@@ -6,8 +6,7 @@ This project includes Dockerfiles and requirements for various scripts, as well 
 
 1. Clone the repository:
     ```bash
-    git clone <repository_url>
-    cd <repository_directory>
+    git clone https://github.com/danielnzlz01/airflow.git
     ```
 
 2. Build the Docker images and start Airflow services:
