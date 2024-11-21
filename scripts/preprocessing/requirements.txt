@@ -1,0 +1,5 @@
+azure.storage.blob
+pyarrow
+pandas
+sqlalchemy
+pymssql==2.3.1

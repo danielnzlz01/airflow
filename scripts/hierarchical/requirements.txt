@@ -1,0 +1,6 @@
+pandas
+plotly.express
+scikit-learn
+azure.storage.blob
+pyarrow
+setuptools

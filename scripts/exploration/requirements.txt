@@ -1,0 +1,8 @@
+plotly.express
+plotly
+matplotlib
+scipy
+scikit-learn
+pandas
+azure.storage.blob
+pyarrow
