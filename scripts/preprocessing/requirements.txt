@@ -1,5 +1,5 @@
-azure.storage.blob
-pyarrow
-pandas
-sqlalchemy
+azure.storage.blob==12.24.0
+pyarrow==10.0.0
+pandas==2.2.3
+sqlalchemy==2.0.36
 pymssql==2.3.1

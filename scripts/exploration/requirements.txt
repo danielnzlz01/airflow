@@ -1,8 +1,8 @@
-plotly.express
-plotly
-matplotlib
-scipy
-scikit-learn
-pandas
-azure.storage.blob
-pyarrow
+plotly.express==0.4.1
+plotly==5.24.1
+matplotlib==3.9.2
+scipy==1.14.0
+scikit-learn==1.5.2
+pandas==2.2.3
+azure.storage.blob==12.24.0
+pyarrow==10.0.0

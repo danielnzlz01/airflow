@@ -1,6 +1,6 @@
-pandas
-plotly.express
-scikit-learn
-azure.storage.blob
-pyarrow
-setuptools
+pandas==2.2.3
+plotly.express==0.4.1
+scikit-learn==1.5.2
+azure.storage.blob==12.24.0
+pyarrow==10.0.0
+setuptools==75.6.0
