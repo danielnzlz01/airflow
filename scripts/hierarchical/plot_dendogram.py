@@ -11,5 +11,5 @@ data_scaled = download_from_blob('scaled_df_hierarchical', storage_conn_str, con
 linked = linkage(data_scaled, method = 'ward')
 
 fig = ff.create_dendrogram(linked, orientation='bottom')
-fig.update_layout(title='Hierarchical Clustering Dendrogram', xaxis_title='Sample Index', yaxis_title='Distance', xaxis=dict(showline=True, showgrid=False, showticklabels=False))
+fig.update_layout(title='Hierarchical Clustering Dendrogram', yaxis_title='Distance', xaxis=dict(showline=True, showgrid=False, showticklabels=False))
 upload_to_blob(fig.to_html(), 'dendrogram_hierarchical', storage_conn_str, container_name, folder='plots')

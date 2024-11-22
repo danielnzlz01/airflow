@@ -10,7 +10,8 @@ data = download_from_blob('hierarchical_data_agglomerative', storage_conn_str, c
 fig= px.scatter(data, y='ID_Reserva', color='Cluster', title='Reservations by Date and Cluster for Hierarchical Clustering')
 fig.update_layout(
     xaxis_title='Date',
-    yaxis_title='Reservation ID'
+    yaxis_title='Reservation ID',
+    xlabel='Date',
 )
 fig.update_traces(mode='lines+markers')
 
