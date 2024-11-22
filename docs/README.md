@@ -21,6 +21,18 @@ This project includes Dockerfiles and requirements for various scripts, as well 
 
 4. Access the Airflow web interface at `http://localhost:8080`.
 
+5. To run the Streamlit dashboard (Once all plots and models are generated):
+    ```bash
+    docker-compose -f streamlit/docker-compose.yaml up --build -d
+    ```
+
+6. Access the Streamlit dashboard at `http://0.0.0.0:8585`.
+
+7. To stop the Streamlit dashboard:
+    ```bash
+    docker-compose -f streamlit/docker-compose.yaml down
+    ```
+
 ## IMPORTANT
 
 If using linux, run the following commands to avoid database permission issues:
