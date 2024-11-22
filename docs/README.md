@@ -21,7 +21,7 @@ This project includes Dockerfiles and requirements for various scripts, as well 
 
 4. Access the Airflow web interface at http://localhost:8080
 
-5. Access the Streamlit dashboard at http://0.0.0.0:8585
+5. Access the Streamlit dashboard at http://localhost:8585
 
 ## IMPORTANT
 
