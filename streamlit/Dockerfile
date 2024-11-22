@@ -10,4 +10,4 @@ COPY helper_functions.py /app/helper_functions.py
 
 EXPOSE 8585
 
-CMD ["streamlit", "run", "app.py", "--server.port=8585", "--server.address=0.0.0.0"]
+CMD ["streamlit", "run", "app.py", "--server.port=8585"]
