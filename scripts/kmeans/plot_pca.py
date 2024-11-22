@@ -12,7 +12,8 @@ df = download_from_blob('clusters_kmeans', storage_conn_str, container_name, fol
 pca = PCA(n_components=2)
 pca_data = pca.fit_transform(df)
 pca_df = pd.DataFrame(data=pca_data, columns=['PC1', 'PC2'])
-pca_df['Cluster'] = df['Cluster'].astype(str)
-fig = px.scatter(pca_df, x='PC1', y='PC2', title='PCA of K-means Clusters', color='Cluster')
+color = df['Cluster'].astype(str)
+pca_df['Cluster'] = df['Cluster'].values
+fig = px.scatter(pca_df, x='PC1', y='PC2', title='PCA of K-means Clusters', color=color)
 
 upload_to_blob(fig.to_html(), 'clusters_pca_kmeans', storage_conn_str, container_name, folder='plots')

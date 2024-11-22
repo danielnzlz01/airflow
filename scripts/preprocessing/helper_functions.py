@@ -11,7 +11,7 @@ def download_from_blob(filename, storage_conn_str, container_name, folder='temp_
 
 def upload_to_blob(df, filename, storage_conn_str, container_name, folder='temp_files'):
     parquet_buffer = io.BytesIO()
-    df.to_parquet(parquet_buffer, index=False)
+    df.to_parquet(parquet_buffer)
     parquet_buffer.seek(0)
 
     blob_service_client = BlobServiceClient.from_connection_string(storage_conn_str)
