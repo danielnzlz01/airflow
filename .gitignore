@@ -128,3 +128,5 @@ plugins/*
 !config/.gitkeep
 !logs/.gitkeep
 !plugins/.gitkeep
+
+Agent
