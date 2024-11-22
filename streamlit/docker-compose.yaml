@@ -1,0 +1,16 @@
+services:
+  dashboard:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    image: streamlit
+    environment:
+      AZURE_STORAGE_CONNECTION_STRING: ${AZURE_STORAGE_CONNECTION_STRING}
+      AZURE_CONTAINER_NAME: ${AZURE_CONTAINER_NAME}
+    restart: always
+    ports:
+      - "8585:8585"
+
+# docker compose -f streamlit/docker-compose.yaml up --build -d
+# docker compose -f streamlit/docker-compose.yaml down
+# http://0.0.0.0:8585/
